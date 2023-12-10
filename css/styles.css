@@ -508,6 +508,7 @@ h2 {
 }
 
 .modal-container {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -518,7 +519,7 @@ h2 {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal {
+.modal-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -531,6 +532,17 @@ h2 {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
+  animation-name: animateIn;
+  animation-duration: 0.8s;
+}
+
+@keyframes animateIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .modal-close-btn {
@@ -559,11 +571,12 @@ h2 {
 }
 
 .close-btn-icon {
+  fill: orange;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover .close-btn-icon {
-  fill: #ffffff;
+  fill: white !important;
 }
 
 .modal-title {
@@ -602,6 +615,9 @@ h2 {
   padding-left: 38px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:focus-within {
   border-color: #4d5ae5;
 }
 
@@ -609,7 +625,6 @@ h2 {
   position: absolute;
   left: 16px;
   top: 50%;
-  fill: #2e2f42;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -632,6 +647,9 @@ h2 {
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment-area:focus {
   border-color: #4d5ae5;
 }
 
