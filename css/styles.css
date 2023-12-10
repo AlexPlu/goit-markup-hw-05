@@ -673,6 +673,7 @@ input[type="checkbox"]:checked + label span {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
 }
 
 .privacy-link {
