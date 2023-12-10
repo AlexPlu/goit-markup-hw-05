@@ -531,6 +531,7 @@ h2 {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%) scale(1);
   padding: 72px 24px 24px 24px;
   animation-name: animateIn;
   animation-duration: 0.8s;
@@ -571,12 +572,11 @@ h2 {
 }
 
 .close-btn-icon {
-  fill: orange;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover .close-btn-icon {
-  fill: white !important;
+.modal-content .modal-close-btn:hover .close-btn-icon {
+  fill: #ffffff;
 }
 
 .modal-title {
@@ -617,7 +617,7 @@ h2 {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:focus-within {
+.modal-form-input:focus {
   border-color: #4d5ae5;
 }
 
@@ -629,7 +629,7 @@ h2 {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:focus .modal-form-input-icon {
+.modal-content .modal-form-input:focus + svg {
   fill: #4d5ae5;
 }
 
