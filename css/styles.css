@@ -448,3 +448,21 @@ h2 {
 .footer-social-media-list-item-link:focus {
   background-color: #31d0aa;
 }
+
+.subscribe-container {
+  display: flex;
+}
+.subscribe-label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.send-btn {
+  display: flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 165px;
+}
